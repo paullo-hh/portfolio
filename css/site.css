@@ -209,19 +209,68 @@ header.scrolling {
     padding: 100px 2% 200px 2%;
     width: 80%;
     margin: 0 auto;
-    height: 90vh;
+    height: 40vh;
 }
+
+.skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: auto;
+}
+
+.skills-liguagens-assets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 400px;
+}
+
+/* .circle {
+    background-color: #9e9e9e;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+} */
 
 #stacks {
     display: flex;
     flex-direction: column;
+    /* flex-wrap: wrap; */
     gap: 50px;
     align-items: start;
     /* border: 1px red solid; */
     padding: 100px 2% 200px 2%;
     width: 80%;
     margin: 0 auto;
-    height: 90vh;
+    height: 50vh;
+}
+
+.stacks-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 15px;
+    width: 25%;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.text-content {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
 }
 
 #contact {
