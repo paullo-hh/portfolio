@@ -69,6 +69,11 @@ header.scrolling {
 
 .options-itens {
     text-decoration: none;
+    color: #9e9e9e;
+    transition: all .2s ease-in-out;
+}
+
+.options-itens:hover {
     color: #fff;
 }
 
@@ -143,10 +148,16 @@ header.scrolling {
 
 .icon-github,
 .icon-whatsapp,
-.icon-linkedin,
-.icon-instagram {
+.icon-linkedin {
     color: #9e9e9e;
     font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.icon-github:hover,
+.icon-whatsapp:hover,
+.icon-linkedin:hover {
+    color: #ffffff;
 }
 
 .material-symbols-rounded {
