@@ -40,7 +40,7 @@ header {
 }
 
 header.scrolling {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background: linear-gradient(135deg, rgb(1, 1, 1), rgb(0, 0, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 1);
@@ -98,6 +98,12 @@ header.scrolling {
     width: 80%;
     margin: 0 auto;
     height: 90vh;
+    text-decoration: none;
+}
+
+.about {
+    color: #fff;
+    text-decoration: none;
 }
 
 #title-about {
@@ -200,6 +206,90 @@ header.scrolling {
     position: relative;
 }
 
+.lista-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+.card-list .card-item .card-link {
+    width: 420px;
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 18px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.card-list .card-item .card-image {
+    border-radius: 2px;
+}
+
+.card-list .card-item .badge {
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.stacks-projects {
+    display: flex;
+    justify-content: center;
+    row-gap: 1px;
+    column-gap: 5px;
+    flex-wrap: wrap;
+    height: 70px;
+    margin: 10px 0px 10px 0px;
+}
+
+.stack-item {
+    background-color: #b9b9b958;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2px;
+    padding: 1px 10px;
+}
+
+.div-project {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-projects {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-button {
+    background: transparent;
+    border: #fff 1px solid;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+
+.card-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+
 #skills {
     display: flex;
     flex-direction: column;
@@ -279,7 +369,7 @@ header.scrolling {
     gap: 50px;
     align-items: start;
     /* border: 1px red solid; */
-    padding: 100px 2% 200px 2%;
+    padding: 100px 2% 190px 2%;
     width: 80%;
     margin: 0 auto;
     /* height: 90vh; */
@@ -327,8 +417,15 @@ header.scrolling {
     background-color: transparent;
     outline: none;
     color: #fff;
-    text-transform: uppercase;
     font-size: 16px;
+}
+
+.input-nome {
+    text-transform: uppercase;
+}
+
+.input-email {
+    text-transform: none;
 }
 
 .d-form > form > input::placeholder {
@@ -376,7 +473,7 @@ header.scrolling {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 100px;
 }
 
 #button-top {

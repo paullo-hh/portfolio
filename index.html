@@ -5,39 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paulo Henrique</title>
-    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
-     <link rel="shortcut icon" href="./assets/p-line.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/p-line.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/site.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_up" />
     <link rel="stylesheet" type="text/css" href="./assets/fontawesome/css/all.min.css" />
 </head>
 
-<body class="space-mono-bold">
+<body class="ibm-plex-mono-bold">
     <header id="header">
         <nav class="nav">
-            <p class="space-mono-bold" style="font-size: 24px;">PH.</p>
+            <a href="#about" class="ibm-plex-mono-bold about" style="font-size: 24px;">PH.</a>
 
             <ul class="options-list">
                 <li class="options">
-                    <a class="options-itens" href="#about">ABOUT</a>
+                    <a class="options-itens ibm-plex-mono-bold" href="#about">SOBRE</a>
                 </li>
                 <li class="options">
-                    <a class="options-itens" href="#projects">PROJECTS</a>
+                    <a class="options-itens ibm-plex-mono-bold" href="#projects">PROJETOS</a>
                 </li>
                 <li class="options">
-                    <a class="options-itens" href="#skills">SKILLS</a>
+                    <a class="options-itens ibm-plex-mono-bold" href="#skills">HABILIDADES</a>
                 </li>
                 <!-- <li class="options">
                     <a class="options-itens" href="#stacks">STACKS</a>
                 </li> -->
                 <li class="options">
-                    <a class="options-itens" href="#contact">CONTACT</a>
+                    <a class="options-itens ibm-plex-mono-bold" href="#contact">CONTATO</a>
                 </li>
             </ul>
 
@@ -49,13 +49,14 @@
 
     <section id="about" style="position: relative;">
         <div class="container-text-about">
-            <input type="text" name="" id="title-about" class="space-mono-regular" placeholder="<About me>" disabled>
+            <input type="text" name="" id="title-about" class="ibm-plex-mono-medium" placeholder="<Sobre>" disabled>
 
-            <p class="space-mono-regular about-text">Desenvolvedor back-end especialista em C# e JavaScript, <br>focado
-                na criação de soluções eficientes e escaláveis.</p>
+            <p class="ibm-plex-mono-regular about-text">Desenvolvedor Back-end | Kotlin, C#, SQL Server, PostgreSQL, JasperReports</p>
 
-            <a href="#contact"><button id="button-contact" class="space-mono-regular" type="button">CONTACT
-                    ME</button></a>
+            <a href="#contact">
+                <button id="button-contact" class="ibm-plex-mono-semibold" type="button">CONTATE
+                    ME</button>
+            </a>
         </div>
 
         <img src="./assets/17672894_8680578476551 cort.jpg" width="400px" height="400px">
@@ -77,40 +78,83 @@
             <a href="#projects"><i class="fa-solid fa-chevron-up fa-bounce fa-xl" style="color: #9e9e9e;"></i></a>
         </div>
 
-        <input type="text" name="" id="title-projects" class="space-mono-regular" placeholder="<Projects>" disabled>
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi consequatur atque quam nesciunt sapiente
-            neque incidunt? Aut culpa placeat est repellat qui animi in, quisquam laborum quia omnis reprehenderit? Vel.
-        </p>
-
+        <input type="text" name="" id="title-projects" class="ibm-plex-mono-medium" placeholder="<Projetos>" disabled>
+        <div class="lista-projetos">
+            <div class="card-wrapper ibm-plex-mono-regular">
+                <ul class="card-list">
+                    <li class="card-item">
+                        <div href="#" class="card-link">
+                            <h2 class="badge ibm-plex-mono-regular">Portal Católico do Brasil</h2>
+                            <h4 class="card-title ibm-plex-mono-light">Desenvolvimento de uma plataforma para centralizar informações sobre igrejas, missas, liturgia e santos.</h4>
+                            <div class="stacks-projects">
+                                <p class="stack-item">ASP.NET Core</p>
+                                <p class="stack-item">C#</p>
+                                <p class="stack-item">APIs RESTful</p>
+                                <p class="stack-item">SQL Server</p>
+                                <p class="stack-item">Azure</p>
+                            </div>
+                            <div class="ibm-plex-mono-regular div-project">
+                                <a href="https://github.com/paullo-hh/ads-project-portal-catolico" target="_blank">
+                                    <button class="ibm-plex-mono-semibold card-button" type="button">GitHub <i
+                                            class="fa-solid fa-arrow-up fa-rotate-by fa1xl"
+                                            style=" --fa-rotate-angle: 45deg;"></i></button>
+                                </a>
+                                <a href="#projects">
+                                    <button class="ibm-plex-mono-semibold card-button" type="button">Deploy <i
+                                            class="fa-solid fa-arrow-up fa-rotate-by fa1xl"
+                                            style=" --fa-rotate-angle: 45deg;"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-wrapper ibm-plex-mono-regular">
+                <ul class="card-list">
+                    <li class="card-item">
+                        <div href="#" class="card-link">
+                            <h2 class="badge ibm-plex-mono-regular">Solidarize</h2>
+                            <h4 class="card-title ibm-plex-mono-light">Desenvolvimento de uma aplicação para gestão de doações entre doadores e ONGs</h4>
+                            <div class="stacks-projects">
+                                <p class="stack-item">Node.js</p>
+                                <p class="stack-item">SQLite</p>
+                                <p class="stack-item">JSON Server</p>
+                            </div>
+                            <div class="ibm-plex-mono-regular div-project">
+                                <a href="https://github.com/paullo-hh/ads-project-portal-catolico" target="_blank">
+                                    <button class="ibm-plex-mono-semibold card-button" type="button">GitHub <i
+                                            class="fa-solid fa-arrow-up fa-rotate-by fa1xl"
+                                            style=" --fa-rotate-angle: 45deg;"></i></button>
+                                </a>
+                                <a href="#projects">
+                                    <button class="ibm-plex-mono-semibold card-button" type="button">Deploy <i
+                                            class="fa-solid fa-arrow-up fa-rotate-by fa1xl"
+                                            style=" --fa-rotate-angle: 45deg;"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="skills">
-        <input type="text" name="" id="title-projects" class="space-mono-regular" placeholder="<Skills>" disabled>
+        <input type="text" name="" id="title-projects" class="ibm-plex-mono-medium" placeholder="<Hard Skills>"
+            disabled>
 
         <div class="skills-container">
             <div>
-                <p class="space-mono-regular" style="font-size: 24px;">Skills I possess as a specialist</p>
-
-                <ul class="space-mono-regular" style="list-style-type: none;">
-                    <li>- Website development</li>
-                    <li>- Database development</li>
-                    <li>- Website parsing, data filling</li>
+                <!-- <p class="ibm-plex-mono-regular" style="font-size: 24px;">Minhas habilidades técnicas</p> -->
+                <br>
+                <ul class="ibm-plex-mono-regular" style="list-style-type: none; font-size: 20px;">
+                    <li>- Desenvolvimento de API's RESTful</li>
+                    <li>- Desenvolvimento de Banco de dados</li>
+                    <li>- Parsing de sites, preenchimento de dados</li>
                 </ul>
             </div>
 
             <div class="skills-liguagens-assets">
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 48 48">
-                    <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
-                    <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
-                    <path fill="#66bb6a"
-                        d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z">
-                    </path>
-                    <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
-                    <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
-                </svg>
-
                 <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
                     viewBox="0 0 48 48">
                     <path fill="#035bda"
@@ -167,47 +211,6 @@
                     <path fill="#fff" fill-rule="evenodd" d="M34 20H35V28H34zM37 20H38V28H37z" clip-rule="evenodd">
                     </path>
                     <path fill="#fff" fill-rule="evenodd" d="M32 25H40V26H32zM32 22H40V23H32z" clip-rule="evenodd">
-                    </path>
-                </svg>
-
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 48 48">
-                    <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                    <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                    <path fill="#FFF"
-                        d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
-                    </path>
-                    <path fill="#EEE"
-                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
-                    </path>
-                </svg>
-
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 48 48">
-                    <polygon fill="#40c4ff" points="26,4 6,24 12,30 38,4"></polygon>
-                    <polygon fill="#40c4ff" points="38,22 27,33 21,27 26,22"></polygon>
-                    <rect width="8.485" height="8.485" x="16.757" y="28.757" fill="#03a9f4"
-                        transform="rotate(-45.001 21 33)"></rect>
-                    <polygon fill="#01579b" points="38,44 26,44 21,39 27,33"></polygon>
-                    <polygon fill="#084994" points="21,39 30,36 27,33"></polygon>
-                </svg>
-
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 48 48">
-                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                    <path fill="#FFF"
-                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
-                    <path fill="#EEE"
-                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
-                    </path>
-                </svg>
-
-                <svg class="circle" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
-                    viewBox="0 0 48 48">
-                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-                    <path fill="#000001"
-                        d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
                     </path>
                 </svg>
 
@@ -300,7 +303,8 @@
     </section>
 
     <section id="stacks">
-        <input type="text" name="" id="title-projects" class="space-mono-regular" placeholder="<Stacks>" disabled>
+        <input type="text" name="" id="title-projects" class="ibm-plex-mono-medium" placeholder="<Soft Skills>"
+            disabled>
 
         <div class="stacks-content">
             <div class="content">
@@ -309,56 +313,72 @@
                     <path fill="#ffffff"
                         d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z" />
                 </svg>
-                <p class="space-mono-bold">Comunicação</p>
-                <p class="space-mono-regular">Respondo rapidamente às suas mensagens durante o nosso trabalho, pois
+                <p class="ibm-plex-mono-bold">Comunicação</p>
+                <p class="ibm-plex-mono-regular">Respondo rapidamente às suas mensagens durante o nosso trabalho, pois
                     estou online a maior parte do tempo, por isso a cooperação é produtiva.
                 </p>
             </div>
 
             <div class="content">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z"/></svg>
-                <p class="space-mono-bold">Conscientização empresarial</p>
-                <p class="space-mono-regular">Mergulhando no seu modelo de negócios. Posso realizar um projeto da maneira que um cliente deseja vê-lo, não apenas um desenvolvedor
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="21"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z" />
+                </svg>
+                <p class="ibm-plex-mono-bold">Conscientização empresarial</p>
+                <p class="ibm-plex-mono-regular">Mergulhando no seu modelo de negócios. Posso realizar um projeto da
+                    maneira que um cliente deseja vê-lo, não apenas um desenvolvedor
                 </p>
             </div>
 
             <div class="content">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="30" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c1.8 0 3.5-.2 5.3-.5c-76.3-55.1-99.8-141-103.1-200.2c-16.1-4.8-33.1-7.3-50.7-7.3l-91.4 0zm308.8-78.3l-120 48C358 277.4 352 286.2 352 296c0 63.3 25.9 168.8 134.8 214.2c5.9 2.5 12.6 2.5 18.5 0C614.1 464.8 640 359.3 640 296c0-9.8-6-18.6-15.1-22.3l-120-48c-5.7-2.3-12.1-2.3-17.8 0zM591.4 312c-3.9 50.7-27.2 116.7-95.4 149.7l0-187.8L591.4 312z"/></svg>
-                <p class="space-mono-bold">Privacidade</p>
-                <p class="space-mono-regular">Alguns projetos possuem propriedades únicas que não deveriam ser públicas até o final da implementação ou mesmo após.
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" width="30"
+                    viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path fill="#ffffff"
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c1.8 0 3.5-.2 5.3-.5c-76.3-55.1-99.8-141-103.1-200.2c-16.1-4.8-33.1-7.3-50.7-7.3l-91.4 0zm308.8-78.3l-120 48C358 277.4 352 286.2 352 296c0 63.3 25.9 168.8 134.8 214.2c5.9 2.5 12.6 2.5 18.5 0C614.1 464.8 640 359.3 640 296c0-9.8-6-18.6-15.1-22.3l-120-48c-5.7-2.3-12.1-2.3-17.8 0zM591.4 312c-3.9 50.7-27.2 116.7-95.4 149.7l0-187.8L591.4 312z" />
+                </svg>
+                <p class="ibm-plex-mono-bold">Privacidade</p>
+                <p class="ibm-plex-mono-regular">Alguns projetos possuem propriedades únicas que não deveriam ser
+                    públicas até o final da implementação ou mesmo após.
                 </p>
             </div>
         </div>
         <div class="text-content">
-            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#9e9e9e" d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 47-92.8 37.1c-21.3 8.5-35.2 29.1-35.2 52c0 56.6 18.9 148 94.2 208.3c-9 4.8-19.3 7.6-30.2 7.6L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zm39.1 97.7c5.7-2.3 12.1-2.3 17.8 0l120 48C570 277.4 576 286.2 576 296c0 63.3-25.9 168.8-134.8 214.2c-5.9 2.5-12.6 2.5-18.5 0C313.9 464.8 288 359.3 288 296c0-9.8 6-18.6 15.1-22.3l120-48zM527.4 312L432 273.8l0 187.8c68.2-33 91.5-99 95.4-149.7z"/></svg>
-        <p class="space-mono-regular">Garanto a confidencialidade do produto, que pode ser confirmada por um acordo de NDA.</p>
-    </div>
+            <svg xmlns="http://www.w3.org/2000/svg" height="20" width="22.5"
+                viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path fill="#9e9e9e"
+                    d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 47-92.8 37.1c-21.3 8.5-35.2 29.1-35.2 52c0 56.6 18.9 148 94.2 208.3c-9 4.8-19.3 7.6-30.2 7.6L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128zm39.1 97.7c5.7-2.3 12.1-2.3 17.8 0l120 48C570 277.4 576 286.2 576 296c0 63.3-25.9 168.8-134.8 214.2c-5.9 2.5-12.6 2.5-18.5 0C313.9 464.8 288 359.3 288 296c0-9.8 6-18.6 15.1-22.3l120-48zM527.4 312L432 273.8l0 187.8c68.2-33 91.5-99 95.4-149.7z" />
+            </svg>
+            <p class="ibm-plex-mono-regular">Garanto a confidencialidade do produto, que pode ser confirmada por um
+                acordo de NDA.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <input type="text" name="" id="title-projects" class="space-mono-regular" placeholder="<Contact>" disabled>
+        <input type="text" name="" id="title-projects" class="ibm-plex-mono-medium" placeholder="<Contato>" disabled>
 
         <div id="contact-content">
             <div class="div-content-contact d-text">
-                <p class="space-mono-regular">Envie-me uma mensagem quando e como quiser e começaremos nossa cooperação.
+                <p class="ibm-plex-mono-regular">Envie-me uma mensagem quando e como quiser e começaremos nossa
+                    cooperação.
                 </p>
                 <a href="https://api.whatsapp.com/send?phone=5596981455080" target="_blank">
-                    <p class="space-mono-regular">MEU TELEFONE:<br>(96) 98145-5080</p>
+                    <p class="ibm-plex-mono-regular">MEU TELEFONE:<br>(96) 98145-5080</p>
                 </a>
                 <a href="mailto:contacthenry96@gmail.com" target="_blank">
-                    <p class="space-mono-regular">E-MAIL:<br>contacthenry96@gmail.com</p>
+                    <p class="ibm-plex-mono-regular">E-MAIL:<br>contacthenry96@gmail.com</p>
                 </a>
             </div>
 
             <div class="div-content-contact d-form">
                 <form>
-                    <input type="text" class="space-mono-regular" placeholder="NOME" autocapitalize="characters"
-                        required />
-                    <input type="email" class="space-mono-regular" placeholder="E-MAIL" autocapitalize="characters"
-                        required />
-                    <textarea type="text" class="space-mono-regular" placeholder="SUA MENSAGEM" maxlength="250"
-                        style="resize: unset" autocapitalize="characters" required></textarea>
-                    <button type="submit" class="space-mono-regular">ENVIAR</button>
+                    <input type="text" class="ibm-plex-mono-regular input-nome" placeholder="NOME" required />
+                    <input type="email" class="ibm-plex-mono-regular input-email" placeholder="E-MAIL" required />
+                    <input type="tel" class="ibm-plex-mono-regular fone" name="fone" maxlength="15"
+                        placeholder="(00) 00000-0000" required />
+                    <textarea type="text" class="ibm-plex-mono-regular" placeholder="SUA MENSAGEM" maxlength="200"
+                        style="resize: unset" required></textarea>
+                    <button type="submit" class="ibm-plex-mono-semibold">ENVIAR</button>
                 </form>
             </div>
         </div>
@@ -371,11 +391,8 @@
         </button>
     </a>
 
-    <!-- <main id="main">
-    </main> -->
-
     <footer class="footer">
-        <div class="space-mono-regular">
+        <div class="ibm-plex-mono-regular">
             &copy; 2024 - Paulo Henrique
         </div>
     </footer>
